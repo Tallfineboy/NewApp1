@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewApp1.LoginPage">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="10" Margin="10" BackgroundColor="#fafafa">
+            
+            <Label Text="Sign In." FontSize="35" FontAttributes="Bold" TextColor="Navy" Margin="10,0,0,0">
+
+            </Label>
+
+            <Label Text="Instant recharge of airtime, databundle, bills and much more." FontSize="14" TextColor="Black" Margin="10,0,25,0">
+
+            </Label>
+
+            <Label Text="Phone Number" FontSize="15" TextColor="Black" HorizontalOptions="Start" Margin="10,40,0,0" >
+
+            </Label>
+            <Frame CornerRadius="15" Padding="10" >
+                <Entry Keyboard="Numeric" x:Name="Pnumber" MaxLength="20"  FontSize="12" BackgroundColor="Transparent" TextColor="Gray" Placeholder="Phone Number" PlaceholderColor="Gray" HorizontalOptions="FillAndExpand"></Entry>
+
+
+            </Frame>
+
+
+            <Label Text="Password" FontSize="15" TextColor="Black" HorizontalOptions="Start" Margin="10, 20, 0, 0">
+
+
+            </Label>
+            <Frame CornerRadius="15" Padding="10">
+                <Entry Keyboard="Numeric" x:Name="Passwords" MaxLength="20" FontSize="12" BackgroundColor="Transparent" TextColor="Gray" Placeholder="Password" PlaceholderColor="Gray" HorizontalOptions="FillAndExpand"></Entry>
+            </Frame>
+            <StackLayout Orientation="Horizontal" Spacing="10" Margin="10">
+                <Button Text="Sign In" HeightRequest="40" WidthRequest="260" BackgroundColor="DeepPink" HorizontalOptions="EndAndExpand" CornerRadius="20" TextColor="White" Clicked="Button_Clicked" FontAttributes="Bold" FontSize="15"></Button>
+                <Button ImageSource="blackscan.png"  HeightRequest="40" WidthRequest="40"    BackgroundColor="White" HorizontalOptions="StartAndExpand" CornerRadius="20" TextColor="White" Clicked="Button_Clicked_1" FontAttributes="Bold" FontSize="15"></Button>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="-210" Margin="10">
+                <Label Text="New User?" FontSize="16" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                   
+                </Label>
+
+                <Label Text="Sign Up" FontSize="15" TextColor="Navy" FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="-180" Margin="10">
+                <Label Text="Forgot Password?" FontSize="16" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                   
+                </Label>
+
+                <Label Text="Reset" FontSize="15" TextColor="Navy" FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+
+            <Label Text="clubkonnect v2.0.34" FontSize="15" FontAttributes="Bold" TextColor="Gray" HorizontalOptions="CenterAndExpand" Margin="0, 55, 0, 0">
+
+            </Label>
+
+           
+
+
+            <!--<StackLayout Orientation="Horizontal" Spacing="10" Margin="10">
+                <Button ImageSource="google8.png" HeightRequest="40" WidthRequest="40" BackgroundColor="White" HorizontalOptions="EndAndExpand" CornerRadius="20" TextColor="White" Clicked="Button_Clicked_1" FontAttributes="Bold" FontSize="15"></Button>
+                <Button ImageSource="apple8.png" HeightRequest="40" WidthRequest="40"    BackgroundColor="White" HorizontalOptions="StartAndExpand" CornerRadius="20" TextColor="White" Clicked="Button_Clicked_2" FontAttributes="Bold" FontSize="15"></Button>
+
+            </StackLayout>-->
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
